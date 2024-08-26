@@ -47,7 +47,7 @@ jobs:
 
       # 给权限
       - name: 给权限
-        run: chmod +x ./mdbook build
+        run: chmod +x ./mdbook
 
       # 打包
       - name: 打包 🔧
