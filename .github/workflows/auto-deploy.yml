@@ -33,9 +33,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 安装 mdbook
-      - name: 安装 mdbook
-        run: sudo apt-get update && sudo apt-get install -y mdbook
+      - name: Add Rust repository
+        run: |
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository ppa:neovim-ppa/stable
+          curl https://sh.rustup.rs -sSf | sh -s -- -y
+          source $HOME/.cargo/env
+        
+      - name: Install mdbook
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mdbook
+
       # 打包
       - name: 打包 🔧
         run: mdbook build
@@ -45,5 +54,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # default: gh-pages
-          folder: dist # 打包后的文件存放的目录，默认是 dist
+          folder: book # 打包后的文件存放的目录，默认是 dist
 
