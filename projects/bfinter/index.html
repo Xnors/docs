@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Xnors工作室主页</title>
+        <title>项目: bfinter</title>
 
 
         <!-- Custom HTML head -->
@@ -12,21 +12,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Xnors工作室主页.html" class="active"><strong aria-hidden="true">1.</strong> Xnors工作室主页</a></li><li class="chapter-item expanded "><a href="projects/bfinter/index.html"><strong aria-hidden="true">2.</strong> 项目: bfinter</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../Xnors工作室主页.html"><strong aria-hidden="true">1.</strong> Xnors工作室主页</a></li><li class="chapter-item expanded "><a href="../../projects/bfinter/index.html" class="active"><strong aria-hidden="true">2.</strong> 项目: bfinter</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -144,7 +144,7 @@
                     <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -173,16 +173,46 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="xnors工作室主页文档"><a class="header" href="#xnors工作室主页文档">Xnors工作室主页文档</a></h1>
+                        <h1 id="这是一个-brainfuck-语言解释器"><a class="header" href="#这是一个-brainfuck-语言解释器">这是一个 brainfuck 语言解释器</a></h1>
+<p>Github: https://github.com/xnors/bfinter</p>
+<h2 id="构建"><a class="header" href="#构建">构建:</a></h2>
+<p>切换到 <code>%GO_PATH%/src</code>目录</p>
+<pre><code class="language-shell">cd %GO_PATH%/src
+</code></pre>
+<p>克隆此项目</p>
+<pre><code class="language-shell">git clone https://github.com/xnors/bfinter.git
+</code></pre>
+<p>切换到项目目录</p>
+<pre><code class="language-shell">cd bfinter
+</code></pre>
+<p>构建此项目</p>
+<pre><code class="language-shell">go build
+</code></pre>
+<p>或者, 运行此项目</p>
+<pre><code class="language-shell">go run .
+</code></pre>
+<h2 id="用法"><a class="header" href="#用法">用法：</a></h2>
+<p><code>./bfinter run &lt;filename&gt;</code> 运行 brainfuck 文件</p>
+<p><code>./bfinter compile &lt;filename&gt;</code> 编译 brainfuck 文件成可执行文件</p>
+<p><code>./bfinter outc &lt;filename&gt;</code> 编译 brainfuck 文件成 C 语言文件</p>
+<p><code>./bfinter cmd &lt;brainfuck-command&gt;</code> 执行 brainfuck 命令(代码)</p>
+<p><code>./bfinter check &lt;filename&gt;</code> 检查 brainfuck 文件的可运行性</p>
+<h2 id="注意"><a class="header" href="#注意">注意:</a></h2>
+<p>如果代码里面有无限循环, 检查器将不会有反应.
+这样可能会占用极多内存资源.</p>
+<p>所以,运行前请确认代码里面没有无用的无限循环</p>
+<p>如果您希望我编写一个设置最大循环上线的功能(其实之前写过,但是最后删了),</p>
+<p>请提交一个 issue</p>
+<p>感谢!!!</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next prefetch" href="projects/bfinter/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="../../Xnors工作室主页.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -190,10 +220,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next prefetch" href="projects/bfinter/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="../../Xnors工作室主页.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>
@@ -206,13 +236,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
 
