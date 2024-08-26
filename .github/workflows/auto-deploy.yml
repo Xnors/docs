@@ -29,25 +29,25 @@ jobs:
 
     # 步骤
     steps:
-      # 官方action，将代码拉取到虚拟机
-      - name: Checkout
-        uses: actions/checkout@v4
+      # # 官方action，将代码拉取到虚拟机
+      # - name: Checkout
+      #   uses: actions/checkout@v4
 
-      - name: Add Rust repository
-        run: |
-          sudo apt-get install -y software-properties-common
-          sudo add-apt-repository ppa:neovim-ppa/stable
-          curl https://sh.rustup.rs -sSf | sh -s -- -y
-          source $HOME/.cargo/env
+      # - name: Add Rust repository
+      #   run: |
+      #     sudo apt-get install -y software-properties-common
+      #     sudo add-apt-repository ppa:neovim-ppa/stable
+      #     curl https://sh.rustup.rs -sSf | sh -s -- -y
+      #     source $HOME/.cargo/env
         
-      - name: Install mdbook
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y mdbook
+      # - name: Install mdbook
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y mdbook
 
       # 打包
       - name: 打包 🔧
-        run: mdbook build
+        run: ./mdbook build
 
       # 部署 https://github.com/JamesIves/github-pages-deploy-action
       - name: 部署 🚀
