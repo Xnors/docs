@@ -15,8 +15,8 @@
 ### 项目地址: 
 - [bfinter 项目地址](https://github.com/xnors/bfinter)
 - [bfinter 文档地址](../projects/bfinter/README.md)
-- [最新发行版](https://github.com/fexcode/bfinter/releases/tag/v1.0.0)
-- [Windows 编译版下载](https://github.com/fexcode/bfinter/releases/download/v1.0.0/bfinter.exe)
+- [最新发行版](https://github.com/xnors/bfinter/releases/tag/v1.0.0)
+- [Windows 编译版下载](https://github.com/xnors/bfinter/releases/download/v1.0.0/bfinter.exe)
 
 ### 参与的成员:
 - [fexcode](https://github.com/fexcode)
