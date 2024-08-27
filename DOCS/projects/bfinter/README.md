@@ -24,15 +24,15 @@ go run .
 ```
 
 ## 用法：
-`./bfinter run <filename>` 运行 brainfuck 文件
+`./bfinter run <filename>` 运行 *brainfuck* 文件
 
-`./bfinter compile <filename>` 编译 brainfuck 文件成可执行文件
+`./bfinter compile <filename>` 编译 *brainfuck* 文件成可执行文件
 
-`./bfinter outc <filename>` 编译 brainfuck 文件成 C 语言文件
+`./bfinter outc <filename>` 编译 *brainfuck* 文件成 *C* 语言文件 *(有优化)*
 
-`./bfinter cmd <brainfuck-command>` 执行 brainfuck 命令(代码)
+`./bfinter cmd <brainfuck-command>` 执行 *brainfuck* 代码 *(有优化)*
 
-`./bfinter check <filename>` 检查 brainfuck 文件的可运行性
+`./bfinter check <filename>` 检查 *brainfuck* 文件的可运行性
 
 ## 注意:
 如果代码里面有无限循环, 检查器将不会有反应.
