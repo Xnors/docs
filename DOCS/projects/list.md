@@ -7,7 +7,7 @@
 
 ### 特点:
 - 性能高, 可以快速运行大量`brainfuck` 代码
-- 功能多(支持解释运行,编译运行, 静态检查等), 详见 [bfinter 文档](./bfinter/README.md)
+- 功能多(支持解释运行,编译运行, 静态检查等), 详见 [bfinter 文档](https://xnors.github.io/docs/projects/bfinter/index.html)
 - 编译体积小
 - 编译有优化
 - 支持无限循环逻辑
